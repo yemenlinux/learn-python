@@ -3,7 +3,7 @@ import xmlrpc.client
 
 def main():
     # Connect to server
-    proxy = xmlrpc.client.ServerProxy('http://localhost:8000/')
+    proxy = xmlrpc.client.ServerProxy('http://localhost:8001/')
     
     try:
         # Test basic functions

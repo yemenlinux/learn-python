@@ -65,7 +65,7 @@ def monitor_process_states():
 
 #######################
 
-def monitor_process_states_fixed():
+def monitor_process_states_fixed1():
     """Monitor process states without creating zombies"""
     
     def get_process_info(pid):
@@ -143,4 +143,4 @@ def monitor_process_states_fixed():
             print("Child already collected")
 
 # Test the fixed version
-monitor_process_states_fixed()
+monitor_process_states_fixed1()
