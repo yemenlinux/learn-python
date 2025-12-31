@@ -178,7 +178,7 @@ def threading_issues_demo():
     worker = CancellableWorker()
     print("Starting worker thread...")
     worker.start()
-    time.sleep(2)
+    time.sleep(5)
     print("Stopping worker thread...")
     worker.stop()
 

@@ -74,7 +74,7 @@ def amdahls_law_demo():
     
     # Four cores (theoretically)
     start = time.time()
-    serial_portion() # لاحظ أننا حسبنا زمن التنفيذ لعملية واحدة كاملة مع التوازي أيضاً
+    # serial_portion() # لاحظ أننا حسبنا زمن التنفيذ لعملية واحدة كاملة مع التوازي أيضاً
     with ThreadPoolExecutor(max_workers=4) as executor:
         # Divide work among 4 threads
         futures = [executor.submit(parallelizable_portion, 0.25) for _ in range(4)]
