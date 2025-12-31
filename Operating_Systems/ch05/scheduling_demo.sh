@@ -364,7 +364,7 @@ echo -e "\n${BOLD}Priority Execution Order:${NC}"
 done
 
 echo -e "\n${RED}⚠ STARVATION PROBLEM:${NC} Low-priority processes may never execute"
-echo "${GREEN}✓ SOLUTION - AGING:${NC} Gradually increase priority of waiting processes"
+echo -e "${GREEN}✓ SOLUTION - AGING:${NC} Gradually increase priority of waiting processes"
 echo "  Priority(t) = BasePriority + f(waiting_time)"
 echo "  where f() increases with time"
 
