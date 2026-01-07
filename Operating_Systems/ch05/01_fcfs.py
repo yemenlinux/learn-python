@@ -41,6 +41,13 @@ processes_fcfs = [
     ('P3', 2, 3)
 ]
 
+# Example usage
+processes_fcfs = [
+    ('P1', 0, 9),
+    ('P2', 1, 5),
+    ('P3', 2, 3)
+]
+
 print("FCFS Scheduling:")
 print(f"{'PID':<5} {'Arrival':<8} {'Burst':<6} {'Completion':<10} {'Turnaround':<10} {'Waiting':<8}")
 for p in fcfs_scheduling(processes_fcfs):

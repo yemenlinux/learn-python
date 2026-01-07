@@ -52,6 +52,14 @@ processes_sjf = [
     ('P3', 0, 7),
     ('P4', 0, 3)
 ]
+# Example usage
+processes_sjf = [
+    ('P1', 0, 6),
+    ('P2', 0, 2),
+    ('P3', 0, 7),
+    ('P4', 0, 3)
+]
+
 
 print("\nSJF Scheduling:")
 print(f"{'PID':<5} {'Arrival':<8} {'Burst':<6} {'Completion':<10} {'Turnaround':<10} {'Waiting':<8}")
