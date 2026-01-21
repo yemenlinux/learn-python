@@ -274,14 +274,14 @@ def demonstrate_mutex_locks():
         print("Process 2 released both locks")
     
     # Uncomment to see deadlock (will hang)
-    # print("Creating deadlock scenario (commented out to prevent hanging)...")
-    # t1 = threading.Thread(target=process_1)
-    # t2 = threading.Thread(target=process_2)
-    # t1.start()
-    # t2.start()
-    # t1.join(timeout=2)
-    # t2.join(timeout=2)
-    # print("If you see this after timeout, deadlock was prevented by timeout.")
+    print("Creating deadlock scenario (commented out to prevent hanging)...")
+    t1 = threading.Thread(target=process_1)
+    t2 = threading.Thread(target=process_2)
+    t1.start()
+    t2.start()
+    t1.join(timeout=2)
+    t2.join(timeout=2)
+    print("If you see this after timeout, deadlock was prevented by timeout.")
     
     print("\nC. MUTEX WITH TIMEOUT (DEADLOCK PREVENTION)")
     
